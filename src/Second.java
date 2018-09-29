@@ -13,7 +13,7 @@ public class Second{
         for (i = 1; t1(t, i) < t2(t, i); i++) {
 
         }
-        System.out.println("\nOutput\n\n" +i);
+       
     }
 
     static double log2(double a) {
