@@ -11,7 +11,6 @@ public class Third {
     static int eval(String eq) {
         ArrayList<Integer> nums = new ArrayList<>();
         Scanner r = new Scanner(eq);
-
         while (r.hasNext()) {
             if (r.hasNextInt()) 
                 nums.add(r.nextInt());
