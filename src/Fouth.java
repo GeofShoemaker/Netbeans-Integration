@@ -13,6 +13,7 @@ public class Fouth {
     static String post(String[] s){
         
         Stack<String> nums = new Stack<>();
+        
         for(int i=0;i<s.length;i++){
             if(isLetter(s[i]))
                 nums.push(s[i]);
@@ -22,12 +23,16 @@ public class Fouth {
                 String c = s[i];
                 nums.push("("+b+c+a+")");
             }
+            
         }
         return nums.pop();
     }
     static boolean isLetter(String s){
         char c = s.charAt(0);
         return (c>='a'&&c<='z')||(c>='A'&&c<='Z');
+    }
+    String removePar(String s){
+        return s;
     }
 }
 
