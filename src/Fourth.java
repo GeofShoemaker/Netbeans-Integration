@@ -62,8 +62,6 @@ public class Fourth {
     static boolean isAS(String s){
         return s.equals("+")||s.equals("-");
     }
-    
-
 }
 
 
