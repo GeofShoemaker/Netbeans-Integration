@@ -41,7 +41,7 @@ public class Fourth {
 
     static boolean doesNeedPar(String[] s,int p){
         if(isAS(s[p]))
-            if(isMD(findNext(s,p+1)))
+            if(isMD(findNext(s,p)))
                     return true;
         return false;
     }
@@ -51,7 +51,7 @@ public class Fourth {
         return (c>='a'&&c<='z')||(c>='A'&&c<='Z');
     }
     static String findNext(String[] s, int p){
-        for(int i=p+1;i<s.length;i++)
+        for(int i=p+2;i<s.length;i++)
             if(!isLetter(s[i]))
                 return s[i];
         return "";
