@@ -5,9 +5,7 @@ public class Sixth {
         String num = r.nextLine();
         if(num.startsWith("0"))
             System.out.println("INVALID");
-        else{
-            int x = Integer.valueOf(num,2);
-            System.out.println(x%3==0?"YES":"NO");
-        }
+        else
+            System.out.println(Integer.valueOf(num,2)%3==0?"YES":"NO");
     }
 }
